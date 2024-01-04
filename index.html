@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="styles/index.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -12,20 +11,21 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="styles/index.css" />
   </head>
   <body>
     <nav class="navigation">
-      <ul id="navigation_list" class="navigation_list show">
+      <ul id="navigation_list" class="navigation_list">
         <li class="navigation_list--item"><a href="#">Works</a></li>
         <li class="navigation_list--item"><a href="#">Services</a></li>
         <li class="navigation_list--item"><a href="#">Contacts</a></li>
-        <li class="navigation_list__item">
-          <button id="button_element" title="button">
-          <i class="fa-solid fa-ellipsis"></i>
-        </button>
-         
-        </li>
       </ul>
+      <!-- <div class="navigation_list__item"> -->
+      <i class="fa-solid fa-ellipsis menu-btn" id="menu-btn">
+        <button title="button"></button>
+      </i>
+
+      <!-- </div> -->
     </nav>
 
     <div class="info">
@@ -35,19 +35,21 @@
         viverra eleifend lacus, vitae ullamcor.
       </h3>
       <picture>
-        <source srcset="./images/small.png" media="(min-width: 1440px)">
-        <source srcset="./images/smaller_image.png" media="(min-width: 768px)">
-        <source srcset="./images/smallest.png" media="(min-width: 50px)">
-        <img srcset="./images/small.png" alt="…">
+        <source srcset="./images/small.png" media="(min-width: 1440px)" />
+        <source
+          srcset="./images/smaller_image.png"
+          media="(min-width: 768px)"
+        />
+        <source srcset="./images/smallest.png" media="(min-width: 50px)" />
+        <img srcset="./images/small.png" alt="…" />
       </picture>
     </div>
 
-
     <script src="main.js">
-        // function showNavigation(){
-        //   const navigation = document.querySelector('.navigation')
-        //   navigation.style.display = 'flex'
-        // }
+      // function showNavigation(){
+      //   const navigation = document.querySelector('.navigation')
+      //   navigation.style.display = 'flex'
+      // }
     </script>
   </body>
 </html>

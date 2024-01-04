@@ -1,7 +1,16 @@
-const btn = document.getElementById("button_element");
+const btn = document.getElementById("menu-btn");
 console.log("btn");
+
 const navList = document.getElementById("navigation_list");
 console.log("navList");
-btn.addEventListener("click", function(){
-    navList.classList.toggle('show');
-});
+
+if (btn) {
+  console.log("btn exists");
+  btn.addEventListener("click", () => {
+    navList.classList.toggle("show");
+  });
+} else {
+  console.log("btn doesnt exist yet");
+}
+// btn.addEventListener("click", () => {
+// });
